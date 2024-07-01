@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Calculator - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="PC logo.jpeg" alt="Profit Calculator" class="logo-image">
+                <h1>Profit Calculator</h1>
+            </div>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#mission">Our Mission</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="nav-button" onclick="opencalc()">Calculator</button>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <div class="hero-section" id="home">
+            <h1>Welcome to <br> Profit Calculator</h1>
+            <p>The fastest way to figure out your profit</p>
+            <a href="#services" class="cta-button" onclick="opencalc()"> Visit our Calculator </a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Why Use Our Profit Calculator?</h2>
+        <div class="features-container">
+            <div class="feature">
+                <img src="assets/icons/calculator-solid.svg" alt="Calculator Icon">
+                <h3>Accurate Profit Calculations</h3>
+                <p>Get precise and reliable profit calculations for your business needs.</p>
+            </div>
+            <div class="feature">
+                <img src="assets/icons/user-group-solid.svg" alt="People Icon">
+                <h3>Easy to Use</h3>
+                <p>Our user-friendly interface ensures a smooth and hassle-free experience.</p>
+            </div>
+            <div class="feature">
+                <img src="assets/icons/rotate-solid.svg" alt="Update icon">
+                <h3>Real-Time Updates</h3>
+                <p>Receive instant updates and stay informed with the latest data.</p>
+            </div>
+            <div class="feature">
+                <img src="assets/icons/ph--chart-line-up-bold.svg" alt="Chart Line Icon">
+                <h3>Detailed Reports</h3>
+                <p>Access comprehensive reports to analyze your profit trends and insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="mission-section" id="mission">
+        <h2>Our Mission</h2>
+        <p>Our mission at Profit Calculator is to provide business owners and individuals with a quick and easy way to calculate their profit. That's why we've created a simple and user-friendly product for you to use.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <h2>Our Services</h2>
+        <div class="row">
+            <div class="card-container">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Regular Calculator</h3>
+                    <p>Quick and easy profit calculations for your basic business needs.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Advanced Calculator</h3>
+                    <p>Detailed profit calculations with advanced features for comprehensive analysis.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <h3>Margin Calculator</h3>
+                    <p>Calculate profit margins efficiently to understand your profitability.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <h3>Multiple Items Calculator</h3>
+                    <p>Calculate profits for multiple items simultaneously to save time and effort.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Break-Even Calculator</h3>
+                    <p>Determine the break-even point to understand when your business will become profitable.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>ROI Calculator</h3>
+                    <p>Calculate the return on investment to evaluate the efficiency of your investments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Remaining Sections: Contact, Footer -->
+    <!-- Add these sections similar to the Services section -->
+
+    <script src="script.js"></script>
+</body>
+</html>
