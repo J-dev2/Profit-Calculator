@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    align-items: center;
+}
+
+
+
+.feature-left {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.feature-left h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.feature-left p {
+    margin-bottom: 20px;
+}
+
+.feature-left button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.feature-right {
+    flex: 1;
+}
+
+.feature-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-card .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1em;
+}
