@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Calculator - example</title>
+    <link rel="stylesheet" href="/calculator/example.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/assets/image/logo.png" alt="logo" class="logo-image">
+                <h1>Profit Calculator</h1>
+            </div>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#mission">Our Mission</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="nav-button" onclick="opencalc()">Calculator</button>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <div class="hero-section" id="home">
+            <h1>Welcome to <br> Profit Calculator</h1>
+            <p>The fastest way to figure out your profit</p>
+            <!-- Calculator Body -->
+            <div class="calc-body">
+                <div class="input-fields">
+                    <label for="price">Price:</label>
+                    <input type="text" id="price" placeholder="Enter price">
+                    
+                    <label for="cost">Cost:</label>
+                    <input type="text" id="cost" placeholder="Enter cost">
+                    
+                    <label for="quantity">Quantity:</label>
+                    <input type="text" id="quantity" placeholder="Enter quantity">
+                </div>
+                <button class="calculate-button">Calculate Profit</button>
+            </div>
+        </div>
+    </header>
