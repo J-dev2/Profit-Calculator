@@ -15,7 +15,7 @@
         <!-- Navigation Bar -->
         <nav class="navbar">
             <div class="logo">
-                <img src="/assets/image/logo.png" alt="logo" class="logo-image">
+                <img src="assets/image/logo.png" alt="logo" class="logo-image">
                 <h1>Profit Calculator</h1>
             </div>
             <div class="nav-links-container">
@@ -30,8 +30,7 @@
         </nav>
         <!-- Hero Section -->
         <div class="hero-section" id="home">
-            <h1>Welcome to <br> Profit Calculator</h1>
-            <p>The fastest way to figure out your profit</p>
+            <h1>Profit Calculator</h1>
             <!-- Calculator Body -->
             <div class="calc-body">
                 <div class="input-fields">
@@ -48,3 +47,63 @@
             </div>
         </div>
     </header>
+
+    <section class="how-it-works" id="how-it-works">
+        <h2>How to use </h2>
+        <div class="steps-wrapper">
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="step-content">
+                    <h3>Enter Price</h3>
+                    <p>Start by entering the price of the product.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <div class="step-content">
+                    <h3>Enter Costs</h3>
+                    <p>Input the production cost to determine profitability.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-boxes"></i>
+                </div>
+                <div class="step-content">
+                    <h3>Set Quantity</h3>
+                    <p>Specify the quantity of products you plan to sell.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="step-content">
+                    <h3>Calculate Profit</h3>
+                    <p>Click "Calculate" to see your projected profit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    let previousScrollPosition = 0;
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        const currentScrollPosition = window.scrollY;
+        if (currentScrollPosition > 0 && previousScrollPosition <= 50) {
+            navbar.classList.add('compact');
+        } else if (currentScrollPosition <= 50 && previousScrollPosition > 50) {
+            navbar.classList.remove('compact');
+        }
+        previousScrollPosition = currentScrollPosition;
+    });
+});
+    </script>
+</body>
+</html>

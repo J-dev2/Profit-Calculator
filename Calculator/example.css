@@ -9,39 +9,39 @@ body, h1, h2, p, ul, li {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+
 }
 
 .header {
-    height: 100vh;
+    height: 90vh;
+    width: 100%;
     color: #000;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(135deg, #ffffff, #b9b9b9);
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    width: 83%;
+    padding: 5px;
+    width: 78%;
+    border: 1.5px solid #D9D9D9;
+    border-radius: 10px;
     position: fixed;
-    top: 0;
-    background: rgba(255, 255, 255, 0.5);
+    top: 0; 
+    background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
-    transition: padding 0.3s, background-color 0s;
     z-index: 1000;
     font-family: 'Montserrat', sans-serif;
+    margin: 12px auto;
 }
 
 .navbar.compact {
-    padding: 5px;
-    background: rgba(255, 255, 255, 0.4);
-    border: 1.5px solid #D9D9D9;
-    border-radius: 10px;
-    width: 78%;
     margin: 12px auto;
 }
 
@@ -115,6 +115,7 @@ body, h1, h2, p, ul, li {
     font-weight: 600;
 }
 
+
 /* Hero Section Styles */
 .hero-section {
     flex: 1;
@@ -123,51 +124,36 @@ body, h1, h2, p, ul, li {
     justify-content: center;
     align-items: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
     text-align: center;
+    width: 600px;
+    height: 800px;
+    border-radius: 15px;
+    margin-top:30px;
 }
 
 .hero-section h1 {
-    color: #fff;
+    color: #000000;
     font-size: 72px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    margin-bottom: 20px;
-}
-
-.hero-section p {
-    color: #ddd;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 40px;
+    text-shadow: 0 0 10px rgba(223, 216, 216, 0.5);
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 
 /* Calculator Body Styles */
 .calc-body {
-    background: rgba(237, 237, 237, 0.8);
+    background: rgba(255, 255, 255, 0); /* Lightly transparent white */
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); /* Subtle shadow for depth */
+    backdrop-filter: blur(2px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(2px); /* Safari support */
     max-width: 450px;
     width: 100%;
     margin-top: 50px;
-}
-
-.input-fields {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.input-fields label {
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 8px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Border to enhance the glass effect */
 }
 
 .input-fields input {
@@ -177,30 +163,160 @@ body, h1, h2, p, ul, li {
     margin-bottom: 15px;
     width: 100%;
     max-width: 350px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.25); /* Semi-transparent input background */
     color: #fff;
     font-size: 18px;
-    box-shadow: inset 0 0 10px #000;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for input depth */
+    backdrop-filter: blur(6px); /* Frosted effect for inputs */
+    -webkit-backdrop-filter: blur(6px); /* Safari support */
 }
 
-.calculate-button{
+.input-fields label {
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.calculate-button {
     display: inline-block;
     text-decoration: none;
     padding: 13px 20px;
     border-radius: 13px;
-    border: 1px solid #d3d3d3;
-    background-color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Semi-transparent border */
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent button background */
     color: #191616;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, transform 0.2s;
     margin-top: 20px;
 }
 
 .calculate-button:hover {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background on hover */
     color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
-    font-weight: 600;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); /* Enhanced shadow for hover effect */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 80px 20px;
+    background: rgba(0, 0, 0, 0.827);
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 800;
+    color: #fff; /* White text for contrast */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.how-it-works h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #000000; /* Green accent line */
+    margin: 10px auto 0;
+}
+
+/* Steps Container */
+.steps-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.step {
+    background: #e9e8e8; /* Dark card background */
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.604), -5px -5px 15px rgba(50, 50, 50, 0.5); /* Deeper shadows for depth */
+    border-radius: 20px;
+    padding: 30px;
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.step::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.3); 
+    border-radius: 50%;
+    z-index: 0;
+    transition: transform 0.3s, opacity 0.3s;
+    animation: pulse 2s infinite; /* Pulsing animation for the background circle */
+}
+
+.step:hover::before {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.step-icon {
+    font-size: 60px;
+    color: #000000; /* White icon color for contrast */
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.step:hover .step-icon {
+    color: #000000b1; /* Change the icon to green on hover */
+}
+
+.step-content {
+    z-index: 1;
+    position: relative;
+}
+
+.step-content h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #000000; /* White text for headings */
+}
+
+.step-content p {
+    font-size: 18px;
+    color: #787676; /* Lighter gray text for descriptions */
+}
+
+/* Hover and Animation Enhancements */
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6), -5px -5px 20px rgba(50, 50, 50, 0.7); /* Stronger shadows on hover */
+}
+
+/* Pulsing Circle Animation */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .steps-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
