@@ -305,6 +305,7 @@ body, h1, h2, p, ul, li {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6), -5px -5px 20px rgba(50, 50, 50, 0.7); /* Stronger shadows on hover */
 }
 
+
 /* Pulsing Circle Animation */
 @keyframes pulse {
     0%, 100% {
@@ -321,4 +322,110 @@ body, h1, h2, p, ul, li {
         flex-direction: column;
         gap: 30px;
     }
+}
+
+
+
+/* Why Should You Use It Section */
+.why-use-it {
+    padding: 80px 20px;
+    background: #1a1a1a; /* Dark background */
+    text-align: center;
+}
+
+.why-use-it-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    color: #ffffff; /* White text */
+}
+
+.why-use-it h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+/* HR tag (Divider) styling */
+.divider {
+    border: none;
+    height: 10px;
+    background-color: #ffffff; /* White line to match the theme */
+    width: 50%; /* Adjust the width as necessary */
+    margin-bottom:-15p;
+    margin-top:-20px;
+}
+
+.why-use-it-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards on the top */
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+.why-use-it-cards .full-width-card {
+    grid-column: 1 / -1; /* Make the last card stretch across the bottom */
+}
+
+.why-use-it-card {
+    background: #333; /* Dark card background */
+    padding: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    height: 245px;
+}
+
+.why-use-it-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    background-color: #1a1a1a;
+}
+
+.why-use-it-card i {
+    font-size: 48px;
+    color: #ffffff; /* White icons */
+    margin-bottom: 20px;
+    display: block;
+}
+
+.why-use-it-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.why-use-it-card p {
+    font-size: 20px;
+    color: #cccccc;
+}
+
+/* Individual card customizations */
+.profit-margin-card {
+    background-color: #3a3a3a;
+    width: 340px;
+}
+
+.customer-insights-card {
+    background-color: #3a3a3a;
+    width: 340px;
+}
+
+.operational-efficiency-card {
+    background-color: #3a3a3a;
+    width: 340px;
+}
+
+.financial-planning-card {
+    background-color: #5a5a5a;
+    height: 200px;
+}
+
+.financial-planning-card:hover {
+    margin-top: 7px;
 }
