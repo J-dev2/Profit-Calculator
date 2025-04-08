@@ -72,3 +72,12 @@ body {
 .feature-card p {
     font-size: 1em;
 }
+
+@keyframes highlight {
+    0% {
+        background-color: rgba(0, 123, 255, 0.1);
+    }
+    100% {
+        background-color: transparent;
+    }
+}

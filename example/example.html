@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Calculator - Example</title>
+    <link rel="stylesheet" href="example.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/assets/image/logo.png" alt="logo" class="logo-image">
+                <h1>Profit Calculator</h1>
+            </div>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#mission">Our Mission</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="nav-button" onclick="opencalc()">Calculator</button>
+            </div>
+        </nav>
+
+        <div class="hero-section" id="home">
+            <h1>Calculate Your Profit</h1>
+            <div class="calc-body">
+                <div class="input-fields">
+                    <div class="input-group">
+                        <label for="price">Price ($)</label>
+                        <input type="number" id="price" placeholder="Enter price">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="cost">Cost ($)</label>
+                        <input type="number" id="cost" placeholder="Enter cost">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" placeholder="Enter quantity">
+                    </div>
+                </div>
+                <button class="calculate-button" onclick="calculateExample()">Calculate Profit</button>
+                <div class="results" id="example-results">
+                    <div class="result-item">
+                        <span>Total Revenue:</span>
+                        <span id="totalRevenue">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Total Cost:</span>
+                        <span id="totalCost">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Net Profit:</span>
+                        <span id="netProfit">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Profit Margin:</span>
+                        <span id="profitMargin">0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="features" id="features">
+        <h2>Why Use Our Calculator?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Accurate Calculations</h3>
+                <p>Get precise profit calculations with our advanced algorithm.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Real-Time Results</h3>
+                <p>See your profit calculations instantly as you input values.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Reliable & Secure</h3>
+                <p>Your data is processed locally, ensuring privacy and security.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile Friendly</h3>
+                <p>Use our calculator on any device, anywhere, anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps-wrapper">
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="step-content">
+                    <h3>Enter Price</h3>
+                    <p>Input your product's selling price</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <div class="step-content">
+                    <h3>Enter Cost</h3>
+                    <p>Input your production cost</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-boxes"></i>
+                </div>
+                <div class="step-content">
+                    <h3>Set Quantity</h3>
+                    <p>Specify the quantity to sell</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="step-content">
+                    <h3>Get Results</h3>
+                    <p>View your profit calculations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Profit Calculator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="example.js"></script>
+</body>
+</html>

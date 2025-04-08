@@ -1,0 +1,32 @@
+                    <div class="input-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" placeholder="Enter quantity">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="tax-rate">Tax Rate (%)</label>
+                        <input type="number" id="tax-rate" placeholder="Enter tax rate" value="0" min="0" max="100">
+                    </div>
+                </div>
+                <button class="calculate-button" onclick="calculateExample()">Calculate Profit</button>
+                <div class="results" id="example-results">
+                    <div class="result-item">
+                        <span>Total Revenue:</span>
+                        <span id="totalRevenue">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Total Cost:</span>
+                        <span id="totalCost">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Tax Amount:</span>
+                        <span id="taxAmount">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Net Profit:</span>
+                        <span id="netProfit">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Profit Margin:</span>
+                        <span id="profitMargin">0%</span>
+                    </div> 

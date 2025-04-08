@@ -9,6 +9,7 @@ function initializeContactForm() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Navbar scroll behavior
     let previousScrollPosition = 0;
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
@@ -20,8 +21,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         previousScrollPosition = currentScrollPosition;
     });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
 });
 
 function opencalc() {
-    location.href = "/Calc/calculator.html";
+    window.location.href = "Calculator/calculator.html";
 }
